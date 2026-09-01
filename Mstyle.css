@@ -1,0 +1,1392 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background: #000;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #000;
+    color: #fff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+body.modal-open {
+    overflow: hidden;
+}
+
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 70px;
+
+    padding: 0 4%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+
+    z-index: 100;
+
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0));
+
+    transition:
+        background 0.3s ease;
+
+}
+
+
+.navbar.scrolled {
+
+    background:
+        rgba(0, 0, 0, 0.96);
+
+}
+
+
+.netflix-logo {
+
+    color: #E50914;
+
+    font-size: 29px;
+
+    font-weight: 900;
+
+    letter-spacing: -1.5px;
+
+    font-family:
+        Arial Black,
+        Arial,
+        sans-serif;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    font-size: 14px;
+
+    color: #ccc;
+
+}
+
+
+.nav-links span {
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease;
+
+}
+
+
+.nav-links span:hover {
+
+    color: #fff;
+
+}
+
+
+.nav-links .active {
+
+    color: #fff;
+
+    font-weight: bold;
+
+}
+
+
+.nav-profile {
+
+    margin-left: auto;
+
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 4px;
+
+    background: #333;
+
+    font-size: 17px;
+
+}
+
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    position: relative;
+
+    height: 88vh;
+
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 6% 60px;
+
+    overflow: hidden;
+
+}
+
+
+
+/* =========================================================
+   PHOTO SLIDESHOW
+========================================================= */
+
+.hero-slideshow {
+
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+}
+
+
+.hero-slide {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    opacity: 0;
+
+    transform: scale(1.06);
+
+    transition:
+        opacity 1.8s ease,
+        transform 8s ease;
+
+}
+
+
+.hero-slide.active {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+}
+
+
+
+/* =========================================================
+   HERO GRADIENT
+========================================================= */
+
+.hero-gradient {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    background:
+
+        linear-gradient(to right,
+            #000 0%,
+            rgba(0, 0, 0, 0.94) 20%,
+            rgba(0, 0, 0, 0.72) 45%,
+            rgba(0, 0, 0, 0.38) 70%,
+            rgba(0, 0, 0, 0.3) 100%),
+
+        linear-gradient(to top,
+            #000 0%,
+            rgba(0, 0, 0, 0.7) 15%,
+            transparent 45%);
+
+}
+
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    max-width: 600px;
+
+    margin-top: 80px;
+
+}
+
+
+.hero-kicker {
+
+    color: #ddd;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(70px,
+            12vw,
+            155px);
+
+    line-height: 0.8;
+
+    font-weight: 900;
+
+    letter-spacing: -7px;
+
+    color: #E50914;
+
+    font-family:
+        Arial Black,
+        Arial,
+        sans-serif;
+
+    text-shadow:
+        0 5px 30px rgba(0, 0, 0, 0.8);
+
+}
+
+
+.hero-details {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    color: #ddd;
+
+    font-size: 14px;
+
+}
+
+
+.hero-details span {
+
+    white-space: nowrap;
+
+}
+
+
+.hero-details .hd {
+
+    border:
+        1px solid #777;
+
+    padding:
+        2px 5px;
+
+    font-size: 11px;
+
+}
+
+
+.hero-description {
+
+    margin-top: 20px;
+
+    max-width: 550px;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    color: #ddd;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+}
+
+
+.play-button,
+.more-button {
+
+    border: none;
+
+    border-radius: 4px;
+
+    padding: 13px 25px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.play-button {
+
+    background: #fff;
+
+    color: #000;
+
+}
+
+
+.play-button:hover {
+
+    background: #ddd;
+
+    transform: scale(1.04);
+
+}
+
+
+.more-button {
+
+    background:
+        rgba(100, 100, 100, 0.75);
+
+    color: #fff;
+
+}
+
+
+.more-button:hover {
+
+    background:
+        rgba(130, 130, 130, 0.85);
+
+    transform: scale(1.04);
+
+}
+
+
+
+/* =========================================================
+   SLIDESHOW INDICATORS
+========================================================= */
+
+.slide-indicators {
+
+    position: absolute;
+
+    right: 5%;
+
+    bottom: 35px;
+
+    z-index: 10;
+
+    display: flex;
+
+    gap: 7px;
+
+}
+
+
+.indicator {
+
+    width: 28px;
+
+    height: 3px;
+
+    background:
+        rgba(255, 255, 255, 0.35);
+
+    transition:
+        background 0.3s ease,
+        width 0.3s ease;
+
+}
+
+
+.indicator.active {
+
+    background: #fff;
+
+    width: 45px;
+
+}
+
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+main {
+
+    position: relative;
+
+    margin-top: -30px;
+
+    z-index: 10;
+
+}
+
+
+
+/* =========================================================
+   VIDEO SECTIONS
+========================================================= */
+
+.video-section {
+
+    padding: 20px 4%;
+
+    margin-bottom: 10px;
+
+}
+
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+
+}
+
+
+.section-title h2 {
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+}
+
+
+.see-all {
+
+    background: none;
+
+    border: none;
+
+    color: #999;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+}
+
+
+.see-all:hover {
+
+    color: #fff;
+
+}
+
+
+
+/* =========================================================
+   VIDEO ROW
+========================================================= */
+
+.video-row {
+
+    display: flex;
+
+    gap: 10px;
+
+    overflow-x: auto;
+
+    overflow-y: visible;
+
+    padding: 10px 0 35px;
+
+    scrollbar-width: none;
+
+}
+
+
+.video-row::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+
+
+/* =========================================================
+   VIDEO CARD
+========================================================= */
+
+.video-card {
+
+    flex:
+        0 0 230px;
+
+    cursor: pointer;
+
+    position: relative;
+
+    border-radius: 5px;
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+.video-card:hover {
+
+    transform: scale(1.15);
+
+    z-index: 50;
+
+}
+
+
+
+/* =========================================================
+   THUMBNAIL
+========================================================= */
+
+.thumbnail {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 130px;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+
+    background: #181818;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.thumbnail video {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    background: #111;
+
+}
+
+
+
+/* =========================================================
+   PLAY ICON
+========================================================= */
+
+.card-play {
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(0, 0, 0, 0.7);
+
+    border:
+        2px solid rgba(255, 255, 255, 0.8);
+
+    font-size: 18px;
+
+    opacity: 0;
+
+    transition:
+        opacity 0.2s ease;
+
+}
+
+
+.video-card:hover .card-play {
+
+    opacity: 1;
+
+}
+
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.progress {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 0;
+
+    height: 4px;
+
+    background:
+        rgba(100, 100, 100, 0.8);
+
+}
+
+
+.progress div {
+
+    width: 35%;
+
+    height: 100%;
+
+    background: #E50914;
+
+}
+
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.video-card h3 {
+
+    margin-top: 9px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+.video-card p {
+
+    margin-top: 4px;
+
+    font-size: 11px;
+
+    color: #777;
+
+}
+
+
+
+/* =========================================================
+   REMEMBER SECTION
+========================================================= */
+
+.memories-section {
+
+    margin-top: 25px;
+
+    padding-top: 45px;
+
+    padding-bottom: 40px;
+
+    background:
+        linear-gradient(to bottom,
+            transparent,
+            rgba(30, 30, 30, 0.35),
+            transparent);
+
+}
+
+
+.memory-heading {
+
+    margin-bottom: 10px;
+
+}
+
+
+.memory-kicker {
+
+    color: #E50914;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.memory-heading h2 {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+}
+
+
+.memory-description {
+
+    color: #888;
+
+    font-size: 13px;
+
+    margin-top: 7px;
+
+}
+
+
+.memory-card {
+
+    flex-basis: 230px;
+
+}
+
+
+.memory-card .thumbnail {
+
+    height: 130px;
+
+}
+
+
+
+/* =========================================================
+   VIDEO MODAL
+========================================================= */
+
+.video-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+}
+
+
+.video-modal.active {
+
+    display: flex;
+
+}
+
+
+.modal-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.94);
+
+    backdrop-filter:
+        blur(8px);
+
+}
+
+
+.modal-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width:
+        min(1000px,
+            100%);
+
+    max-height: 95vh;
+
+    overflow-y: auto;
+
+    background: #181818;
+
+    border-radius: 7px;
+
+    box-shadow:
+        0 25px 100px rgba(0, 0, 0, 0.9);
+
+}
+
+
+.modal-content>video {
+
+    width: 100%;
+
+    max-height: 68vh;
+
+    display: block;
+
+    background: #000;
+
+}
+
+
+.close-button {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 15px;
+
+    z-index: 20;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(0, 0, 0, 0.75);
+
+    color: white;
+
+    font-size: 30px;
+
+    line-height: 30px;
+
+    cursor: pointer;
+
+}
+
+
+.close-button:hover {
+
+    background: #E50914;
+
+}
+
+
+.modal-details {
+
+    padding: 20px 25px 28px;
+
+}
+
+
+.modal-label {
+
+    color: #E50914;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.modal-details h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.modal-meta {
+
+    display: flex;
+
+    gap: 15px;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.modal-details>p:last-child {
+
+    color: #aaa;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 80px 20px 50px;
+
+    margin-top: 30px;
+
+    color: #666;
+
+    border-top:
+        1px solid #181818;
+
+}
+
+
+.footer-logo {
+
+    color: #E50914;
+
+    font-size: 26px;
+
+    font-weight: 900;
+
+    margin-bottom: 15px;
+
+}
+
+
+footer p {
+
+    font-size: 12px;
+
+    margin-top: 8px;
+
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+
+        gap: 15px;
+
+    }
+
+
+    .video-card {
+
+        flex: 0 0 210px;
+
+    }
+
+
+    .thumbnail {
+
+        height: 118px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        height: 60px;
+
+        padding: 0 5%;
+
+    }
+
+
+    .netflix-logo {
+
+        font-size: 23px;
+
+    }
+
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        height: 78vh;
+
+        min-height: 550px;
+
+        padding: 80px 6% 50px;
+
+    }
+
+
+    .hero-content {
+
+        margin-top: 60px;
+
+    }
+
+
+    .hero-slide {
+
+        background-position: center;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 75px;
+
+        letter-spacing: -4px;
+
+    }
+
+
+    .hero-kicker {
+
+        font-size: 11px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .hero-details {
+
+        gap: 10px;
+
+        font-size: 12px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 14px;
+
+        max-width: 100%;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: row;
+
+    }
+
+
+    .play-button,
+    .more-button {
+
+        padding: 11px 17px;
+
+        font-size: 14px;
+
+    }
+
+
+    .slide-indicators {
+
+        right: 6%;
+
+        bottom: 22px;
+
+    }
+
+
+    main {
+
+        margin-top: -20px;
+
+    }
+
+
+    .video-section {
+
+        padding: 18px 5%;
+
+    }
+
+
+    .section-title h2 {
+
+        font-size: 17px;
+
+    }
+
+
+    .video-card {
+
+        flex: 0 0 180px;
+
+    }
+
+
+    .thumbnail {
+
+        height: 102px;
+
+    }
+
+
+    .video-card:hover {
+
+        transform: scale(1.05);
+
+    }
+
+
+    .memory-heading h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .memory-card {
+
+        flex-basis: 180px;
+
+    }
+
+
+    .memory-card .thumbnail {
+
+        height: 102px;
+
+    }
+
+
+    .video-modal {
+
+        padding: 10px;
+
+    }
+
+
+    .modal-content {
+
+        width: 100%;
+
+        border-radius: 5px;
+
+    }
+
+
+    .modal-content>video {
+
+        max-height: 55vh;
+
+    }
+
+
+    .modal-details {
+
+        padding: 17px;
+
+    }
+
+
+    .modal-details h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .close-button {
+
+        width: 35px;
+
+        height: 35px;
+
+        font-size: 25px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+
+        font-size: 62px;
+
+    }
+
+
+    .hero-buttons {
+
+        gap: 7px;
+
+    }
+
+
+    .play-button,
+    .more-button {
+
+        padding: 10px 13px;
+
+        font-size: 13px;
+
+    }
+
+
+    .video-card {
+
+        flex: 0 0 165px;
+
+    }
+
+
+    .thumbnail {
+
+        height: 93px;
+
+    }
+
+}
