@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netflix For Monet</title>
+
+    <link rel="stylesheet" href="Mstyle.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <nav class="navbar">
+
+        <div class="netflix-logo">
+            NETFLIX
+        </div>
+
+        <div class="nav-links">
+
+            <span class="active" onclick="scrollToTop()">
+                Home
+            </span>
+
+            <span onclick="scrollToMessages()">
+                Messages
+            </span>
+
+            <span onclick="scrollToMemories()">
+                Remember
+            </span>
+
+        </div>
+
+        <div class="nav-profile">
+            👤
+        </div>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <header class="hero">
+
+        <!-- PHOTO SLIDESHOW -->
+
+        <div class="hero-slideshow">
+
+            <div class="hero-slide active" style="background-image: url('pictures/one.jpg');">
+            </div>
+
+            <div class="hero-slide" style="background-image: url('pictures/two.jpg');">
+            </div>
+
+            <div class="hero-slide" style="background-image: url('pictures/three.jpg');">
+            </div>
+
+            <div class="hero-slide" style="background-image: url('pictures/four.jpg');">
+            </div>
+
+        </div>
+
+
+        <!-- DARK OVERLAY -->
+
+        <div class="hero-gradient"></div>
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="hero-content">
+
+            <p class="hero-kicker">
+                A NETFLIX ORIGINAL
+            </p>
+
+
+            <h1>
+                MONET
+            </h1>
+
+
+            <div class="hero-details">
+
+                <span>
+                    2026
+                </span>
+
+                <span>
+                    18+
+                </span>
+
+                <span>
+                    1 Season
+                </span>
+
+                <span class="hd">
+                    HD
+                </span>
+
+            </div>
+
+
+            <p class="hero-description">
+
+                Before the next chapter begins,
+                the people who know you best have
+                one final collection of messages for you.
+
+                <br><br>
+
+                Watch your friends say goodbye.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <button class="play-button" onclick="scrollToMessages()">
+
+                    <span>▶</span>
+
+                    Play
+
+                </button>
+
+
+                <button class="more-button" onclick="scrollToMessages()">
+
+                    <span>ⓘ</span>
+
+                    More Info
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SLIDESHOW INDICATORS -->
+
+        <div class="slide-indicators">
+
+            <span class="indicator active"></span>
+
+            <span class="indicator"></span>
+
+            <span class="indicator"></span>
+
+            <span class="indicator"></span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             CONTINUE WATCHING
+        ================================================== -->
+
+        <section class="video-section">
+
+            <div class="section-title">
+
+                <h2>
+                    Continue Watching for Monet
+                </h2>
+
+                <button class="see-all" onclick="scrollToMessages()">
+
+                    See All
+
+                </button>
+
+            </div>
+
+
+            <div class="video-row">
+
+
+                <!-- REBECCA -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Rebecca',
+                        'videos/rebecca.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/rebecca.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                        <div class="progress">
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                    <h3>Rebecca</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- KYLA -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Kyla',
+                        'videos/kyla.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/kyla.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Kyla</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- MWANSA -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Mwansa',
+                        'videos/mwansa.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/mwansa.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Mwansa</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- CYDNIE -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Cydnie',
+                        'videos/cydnie.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/cydnie.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Cydnie</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- NANA -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Nana',
+                        'videos/nana.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/nana.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Nana</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MESSAGES
+        ================================================== -->
+
+        <section class="video-section" id="messages">
+
+            <div class="section-title">
+
+                <h2>
+                    Messages From Your Favourite People
+                </h2>
+
+            </div>
+
+
+            <div class="video-row">
+
+
+                <!-- ELYN -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Elyn',
+                        'videos/elyn.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/elyn.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Elyn</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- JENNIFER -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Jennifer',
+                        'videos/jennifer.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/jennifer.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Jennifer</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- MIA -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Mia',
+                        'videos/mia.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/mia.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Mia</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- IYIADE -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Iyiade',
+                        'videos/iyiade.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/iyiade.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Iyiade</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- DANI -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Dani',
+                        'videos/dani.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/dani.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Dani</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- DEMARIO -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Demario',
+                        'videos/demario.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/demario.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Demario</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MORE GOODBYES
+        ================================================== -->
+
+        <section class="video-section">
+
+            <div class="section-title">
+
+                <h2>
+                    Because One Goodbye Wasn't Enough
+                </h2>
+
+            </div>
+
+
+            <div class="video-row">
+
+
+                <!-- BK -->
+
+                <div class="video-card" onclick="openVideo(
+                        'BK',
+                        'videos/bk.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/bk.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>BK</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- KELLY -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Kelly',
+                        'videos/kelly.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/kelly.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Kelly</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- JODIE -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Jodie',
+                        'videos/jodie.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/jodie.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Jodie</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- DAVID -->
+
+                <div class="video-card" onclick="openVideo(
+                        'David',
+                        'videos/david.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/david.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>David</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- SHALOM -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Shalom',
+                        'videos/shalom.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/shalom.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Shalom</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MORE MESSAGES
+        ================================================== -->
+
+        <section class="video-section">
+
+            <div class="section-title">
+
+                <h2>
+                    More Messages
+                </h2>
+
+            </div>
+
+
+            <div class="video-row">
+
+
+                <!-- ABIGAIL -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Abigail',
+                        'videos/abigail.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/abigail.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Abigail</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- ALINE -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Aline',
+                        'videos/aline.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/aline.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Aline</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- LAURYN -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Lauryn',
+                        'videos/lauryn.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/lauryn.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Lauryn</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- EOIN & MARTHA -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Eoin & Martha',
+                        'videos/eoinmartha.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/eoinmartha.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Eoin & Martha</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- YINKA & CHARLOTTE -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Yinka & Charlotte',
+                        'videos/yinkacharlotte.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/yinkacharlotte.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Yinka & Charlotte</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINAL EPISODES
+        ================================================== -->
+
+        <section class="video-section">
+
+            <div class="section-title">
+
+                <h2>
+                    The Final Episodes
+                </h2>
+
+            </div>
+
+
+            <div class="video-row">
+
+
+                <!-- MICHEAL -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Micheal',
+                        'videos/micheal.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/micheal.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Micheal</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- BATANAI BTS -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Batanaibts',
+                        'videos/batanaibts.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/batanaibts.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Batanai BTS</h3>
+
+                    <p>Behind The Scenes</p>
+
+                </div>
+
+
+
+                <!-- BATANAI -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Batanai',
+                        'videos/batanai.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/batanai.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Batanai</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- PEACE BTS -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Peace BTS',
+                        'videos/peacebettybts.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/peacebettybts.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Peace BTS</h3>
+
+                    <p>Behind The Scenes</p>
+
+                </div>
+
+
+
+                <!-- PEACE BETTY -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Peace Betty',
+                        'videos/peacebetty.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/peacebetty.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Peace Betty</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             LAST GOODBYE
+        ================================================== -->
+
+        <section class="video-section">
+
+            <div class="section-title">
+
+                <h2>
+                    The Last Goodbye
+                </h2>
+
+            </div>
+
+
+            <div class="video-row">
+
+
+                <!-- ISAAC -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Isaac',
+                        'videos/isaac.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/isaac.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Isaac</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- JO -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Jo',
+                        'videos/jo.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/jo.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Jo</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- PRECIOUS -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Precious',
+                        'videos/precious.mov'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/precious.mov" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Precious</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- JOY -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Joy',
+                        'videos/joy.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/joy.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Joy</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+
+
+                <!-- REBECCA -->
+
+                <div class="video-card" onclick="openVideo(
+                        'Rebecca',
+                        'videos/rebecca.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/rebecca.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Rebecca</h3>
+
+                    <p>Goodbye Message</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             REMEMBER WHEN
+        ================================================== -->
+
+        <section class="video-section memories-section" id="memories">
+
+            <div class="memory-heading">
+
+                <p class="memory-kicker">
+                    A COLLECTION OF MEMORIES
+                </p>
+
+                <h2>
+                    Remember When...
+                </h2>
+
+                <p class="memory-description">
+                    Because the goodbye isn't the only thing
+                    worth remembering.
+                </p>
+
+            </div>
+
+
+            <div class="video-row">
+
+
+                <!-- FIVE -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Five',
+                        'mvideos/five.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/five.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Five</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- SIX -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Six',
+                        'mvideos/six.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/six.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Six</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- SEVEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Seven',
+                        'mvideos/seven.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/seven.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Seven</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- EIGHT -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Eight',
+                        'mvideos/eight.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/eight.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Eight</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- NINE -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Nine',
+                        'mvideos/nine.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/nine.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Nine</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- TEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Ten',
+                        'mvideos/ten.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/ten.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Ten</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- ELEVEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Eleven',
+                        'mvideos/eleven.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/eleven.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Eleven</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- TWELVE -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Twelve',
+                        'mvideos/twelve.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/twelve.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Twelve</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- THIRTEEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Thirteen',
+                        'mvideos/thirteen.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/thirteen.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Thirteen</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- FOURTEEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Fourteen',
+                        'mvideos/fourteen.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/fourteen.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Fourteen</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- FIFTEEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Fifteen',
+                        'mvideos/fifteen.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/fifteen.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Fifteen</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- SIXTEEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Sixteen',
+                        'mvideos/sixteen.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/sixteen.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Sixteen</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- SEVENTEEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Seventeen',
+                        'mvideos/seventeen.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/seventeen.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Seventeen</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- EIGHTEEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Eighteen',
+                        'mvideos/eighteen.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/eighteen.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Eighteen</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+
+
+                <!-- NINETEEN -->
+
+                <div class="video-card memory-card" onclick="openVideo(
+                        'Memory Nineteen',
+                        'mvideos/nineteen.mp4'
+                    )">
+
+                    <div class="thumbnail">
+
+                        <video src="mvideos/nineteen.mp4" muted preload="metadata">
+                        </video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>Memory Nineteen</h3>
+
+                    <p>Remember When...</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         VIDEO POPUP
+    ====================================================== -->
+
+    <div class="video-modal" id="videoModal">
+
+        <div class="modal-background" onclick="closeVideo()">
+        </div>
+
+
+        <div class="modal-content">
+
+            <button class="close-button" onclick="closeVideo()">
+
+                ×
+
+            </button>
+
+
+            <video id="mainVideo" controls playsinline>
+            </video>
+
+
+            <div class="modal-details">
+
+                <p class="modal-label">
+                    NETFLIX GOODBYE ORIGINAL
+                </p>
+
+
+                <h2 id="videoTitle">
+                    Goodbye Message
+                </h2>
+
+
+                <div class="modal-meta">
+
+                    <span>
+                        2026
+                    </span>
+
+                    <span>
+                        HD
+                    </span>
+
+                    <span>
+                        Special
+                    </span>
+
+                </div>
+
+
+                <p>
+                    A special message from one of
+                    Monet's favourite people.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            NETFLIX
+        </div>
+
+        <p>
+            This website is a parody made with ❤️
+        </p>
+
+        <p>
+            The Final Season · 2026
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+
+        /* =================================================
+           OPEN VIDEO
+        ================================================= */
+
+        function openVideo(name, videoPath) {
+
+            const modal =
+                document.getElementById("videoModal");
+
+            const video =
+                document.getElementById("mainVideo");
+
+            const title =
+                document.getElementById("videoTitle");
+
+
+            title.textContent = name;
+
+            video.src = videoPath;
+
+            modal.classList.add("active");
+
+            document.body.classList.add("modal-open");
+
+
+            video.play().catch(function () { });
+
+        }
+
+
+
+        /* =================================================
+           CLOSE VIDEO
+        ================================================= */
+
+        function closeVideo() {
+
+            const modal =
+                document.getElementById("videoModal");
+
+            const video =
+                document.getElementById("mainVideo");
+
+
+            video.pause();
+
+            video.removeAttribute("src");
+
+            video.load();
+
+
+            modal.classList.remove("active");
+
+            document.body.classList.remove("modal-open");
+
+        }
+
+
+
+        /* =================================================
+           SCROLL FUNCTIONS
+        ================================================= */
+
+        function scrollToTop() {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+
+        function scrollToMessages() {
+
+            document
+                .getElementById("messages")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+
+
+        function scrollToMemories() {
+
+            document
+                .getElementById("memories")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+
+
+
+        /* =================================================
+           ESCAPE KEY
+        ================================================= */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (event.key === "Escape") {
+
+                    closeVideo();
+
+                }
+
+            }
+        );
+
+
+
+        /* =================================================
+           VIDEO CARD HOVER PREVIEW
+        ================================================= */
+
+        const cards =
+            document.querySelectorAll(".video-card");
+
+
+        cards.forEach(function (card) {
+
+            const video =
+                card.querySelector("video");
+
+
+            card.addEventListener(
+                "mouseenter",
+                function () {
+
+                    video.play().catch(
+                        function () { }
+                    );
+
+                }
+            );
+
+
+            card.addEventListener(
+                "mouseleave",
+                function () {
+
+                    video.pause();
+
+                    video.currentTime = 0;
+
+                }
+            );
+
+        });
+
+
+
+        /* =================================================
+           HERO PHOTO TRAILER
+        ================================================= */
+
+        const slides =
+            document.querySelectorAll(".hero-slide");
+
+
+        const indicators =
+            document.querySelectorAll(".indicator");
+
+
+        let currentSlide = 0;
+
+
+        function changeSlide() {
+
+            slides[currentSlide]
+                .classList.remove("active");
+
+            indicators[currentSlide]
+                .classList.remove("active");
+
+
+            currentSlide =
+                (currentSlide + 1) % slides.length;
+
+
+            slides[currentSlide]
+                .classList.add("active");
+
+            indicators[currentSlide]
+                .classList.add("active");
+
+        }
+
+
+        setInterval(
+            changeSlide,
+            5000
+        );
+
+
+
+        /* =================================================
+           NAVBAR SCROLL EFFECT
+        ================================================= */
+
+        window.addEventListener(
+            "scroll",
+            function () {
+
+                const navbar =
+                    document.querySelector(".navbar");
+
+
+                if (window.scrollY > 50) {
+
+                    navbar.classList.add("scrolled");
+
+                } else {
+
+                    navbar.classList.remove("scrolled");
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
