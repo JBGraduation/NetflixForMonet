@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Netflix For Monet</title>
+    <title>NETFLIX — A Goodbye to Monet</title>
 
     <link rel="stylesheet" href="Mstyle.css">
 
@@ -17,11 +17,11 @@
 <body>
 
 
-    <!-- =====================================================
-         NAVIGATION
-    ====================================================== -->
+    <!-- =========================================================
+     NAVIGATION
+========================================================= -->
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
 
         <div class="netflix-logo">
             NETFLIX
@@ -34,11 +34,19 @@
             </span>
 
             <span onclick="scrollToMessages()">
-                Messages
+                Will
             </span>
 
-            <span onclick="scrollToMemories()">
-                Remember
+            <span onclick="scrollToMessages()">
+                Miss
+            </span>
+
+            <span onclick="scrollToMessages()">
+                You
+            </span>
+
+            <span onclick="scrollToMessages()">
+                ❤️
             </span>
 
         </div>
@@ -51,32 +59,29 @@
 
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
+    <!-- =========================================================
+     HERO
+========================================================= -->
 
-    <header class="hero">
+    <header class="hero" id="home">
+
 
         <!-- PHOTO SLIDESHOW -->
 
         <div class="hero-slideshow">
 
-            <div class="hero-slide active" style="background-image: url('pictures/one.jpg');">
-            </div>
+            <div class="hero-slide active" style="background-image: url('pictures/one.jpg');"></div>
 
-            <div class="hero-slide" style="background-image: url('pictures/two.jpg');">
-            </div>
+            <div class="hero-slide" style="background-image: url('pictures/two.jpg');"></div>
 
-            <div class="hero-slide" style="background-image: url('pictures/three.jpg');">
-            </div>
+            <div class="hero-slide" style="background-image: url('pictures/three.jpg');"></div>
 
-            <div class="hero-slide" style="background-image: url('pictures/four.jpg');">
-            </div>
+            <div class="hero-slide" style="background-image: url('pictures/four.jpg');"></div>
 
         </div>
 
 
-        <!-- DARK OVERLAY -->
+        <!-- HERO GRADIENT -->
 
         <div class="hero-gradient"></div>
 
@@ -85,15 +90,13 @@
 
         <div class="hero-content">
 
-            <p class="hero-kicker">
-                A NETFLIX ORIGINAL
-            </p>
-
+            <div class="hero-kicker">
+                A NETFLIX GOODBYE ORIGINAL
+            </div>
 
             <h1>
                 MONET
             </h1>
-
 
             <div class="hero-details">
 
@@ -105,12 +108,12 @@
                     21+
                 </span>
 
-                <span>
-                    3 Seasons
-                </span>
-
                 <span class="hd">
                     HD
+                </span>
+
+                <span>
+                    3 Seasons
                 </span>
 
             </div>
@@ -118,13 +121,14 @@
 
             <p class="hero-description">
 
-                Before the next chapter begins,
-                the people who know you best have
-                one final collection of messages for you.
+                After years of memories, laughter, chaos and unforgettable
+                moments, the final season has arrived.
 
                 <br><br>
 
-                Watch your friends say goodbye.
+                Since you did so much for us, this time we thought to do something for you.
+                Here are messages from some of the people who will miss you
+                the most.
 
             </p>
 
@@ -132,20 +136,11 @@
             <div class="hero-buttons">
 
                 <button class="play-button" onclick="scrollToMessages()">
-
-                    <span>▶</span>
-
-                    Play
-
+                    ▶ Play
                 </button>
 
-
-                <button class="more-button" onclick="scrollToMessages()">
-
-                    <span>ⓘ</span>
-
-                    More Info
-
+                <button class="more-button" onclick="scrollToMemories()">
+                    ⓘ More Info
                 </button>
 
             </div>
@@ -157,13 +152,10 @@
 
         <div class="slide-indicators">
 
-            <span class="indicator active"></span>
-
-            <span class="indicator"></span>
-
-            <span class="indicator"></span>
-
-            <span class="indicator"></span>
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
 
         </div>
 
@@ -171,180 +163,19 @@
 
 
 
-    <!-- =====================================================
-         MAIN
-    ====================================================== -->
+    <!-- =========================================================
+     MAIN
+========================================================= -->
 
-    <main>
+    <main id="messages">
 
 
-        <!-- =================================================
-             CONTINUE WATCHING
-        ================================================== -->
+
+        <!-- =========================================================
+     MESSAGES FROM YOUR FAVOURITE PEOPLE
+========================================================= -->
 
         <section class="video-section">
-
-            <div class="section-title">
-
-                <h2>
-                    Continue Watching for Monet
-                </h2>
-
-                <button class="see-all" onclick="scrollToMessages()">
-
-                    See All
-
-                </button>
-
-            </div>
-
-
-            <div class="video-row">
-
-
-                <!-- REBECCA -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Rebecca',
-                        'videos/rebecca.mp4'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/rebecca.mp4" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                        <div class="progress">
-                            <div></div>
-                        </div>
-
-                    </div>
-
-                    <h3>Rebecca</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-
-
-                <!-- KYLA -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Kyla',
-                        'videos/kyla.mov'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/kyla.mov" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Kyla</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-
-
-                <!-- MWANSA -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Mwansa',
-                        'videos/mwansa.mp4'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/mwansa.mp4" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Mwansa</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-
-
-                <!-- CYDNIE -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Cydnie',
-                        'videos/cydnie.mov'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/cydnie.mov" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Cydnie</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-
-
-                <!-- NANA -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Nana',
-                        'videos/nana.mov'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/nana.mov" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Nana</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             MESSAGES
-        ================================================== -->
-
-        <section class="video-section" id="messages">
 
             <div class="section-title">
 
@@ -361,14 +192,14 @@
                 <!-- ELYN -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Elyn',
-                        'videos/elyn.mov'
-                    )">
+                'videos/elyn.mov',
+                'Elyn',
+                'Love from Elyn'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/elyn.mov" muted preload="metadata">
-                        </video>
+                        <video src="videos/elyn.mov" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -376,25 +207,25 @@
 
                     </div>
 
-                    <h3>Elyn</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Elyn
+                    </h3>
 
                 </div>
 
 
 
-                <!-- JENNIFER -->
+                <!-- REBECCA -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Jennifer',
-                        'videos/jennifer.mov'
-                    )">
+                'videos/rebecca.mp4',
+                'Rebecca',
+                'Love from Rebecca'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/jennifer.mov" muted preload="metadata">
-                        </video>
+                        <video src="videos/rebecca.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -402,25 +233,25 @@
 
                     </div>
 
-                    <h3>Jennifer</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Rebecca
+                    </h3>
 
                 </div>
 
 
 
-                <!-- MIA -->
+                <!-- MWANSA -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Mia',
-                        'videos/mia.mp4'
-                    )">
+                'videos/mwansa.mp4',
+                'Mwansa',
+                'Love from Mwansa'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/mia.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/mwansa.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -428,25 +259,25 @@
 
                     </div>
 
-                    <h3>Mia</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Mwansa
+                    </h3>
 
                 </div>
 
 
 
-                <!-- IYIADE -->
+                <!-- SHALOM -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Iyiade',
-                        'videos/iyiade.mov'
-                    )">
+                'videos/shalom.MP4',
+                'Shalom',
+                'Love from Shalom'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/iyiade.mov" muted preload="metadata">
-                        </video>
+                        <video src="videos/shalom.MP4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -454,9 +285,9 @@
 
                     </div>
 
-                    <h3>Iyiade</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Shalom
+                    </h3>
 
                 </div>
 
@@ -465,14 +296,14 @@
                 <!-- DANI -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Dani',
-                        'videos/dani.mp4'
-                    )">
+                'videos/dani.mp4',
+                'Dani',
+                'Love from Dani'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/dani.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/dani.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -480,25 +311,25 @@
 
                     </div>
 
-                    <h3>Dani</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Dani
+                    </h3>
 
                 </div>
 
 
 
-                <!-- DEMARIO -->
+                <!-- JOY -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Demario',
-                        'videos/demario.mp4'
-                    )">
+                'videos/joy.mp4',
+                'Joy',
+                'Love from Joy'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/demario.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/joy.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -506,9 +337,35 @@
 
                     </div>
 
-                    <h3>Demario</h3>
+                    <h3>
+                        Joy
+                    </h3>
 
-                    <p>Goodbye Message</p>
+                </div>
+
+
+
+                <!-- PEACE & BETTY -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/peacebetty.MP4',
+                'Peace & Betty',
+                'Love from Peace & Betty'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/peacebetty.MP4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Peace & Betty
+                    </h3>
 
                 </div>
 
@@ -519,9 +376,9 @@
 
 
 
-        <!-- =================================================
-             MORE GOODBYES
-        ================================================== -->
+        <!-- =========================================================
+     BECAUSE ONE GOODBYE WASN'T ENOUGH
+========================================================= -->
 
         <section class="video-section">
 
@@ -540,14 +397,14 @@
                 <!-- BK -->
 
                 <div class="video-card" onclick="openVideo(
-                        'BK',
-                        'videos/bk.mov'
-                    )">
+                'videos/bk.mov',
+                'BK',
+                'Love from BK'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/bk.mov" muted preload="metadata">
-                        </video>
+                        <video src="videos/bk.mov" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -555,9 +412,9 @@
 
                     </div>
 
-                    <h3>BK</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        BK
+                    </h3>
 
                 </div>
 
@@ -566,14 +423,14 @@
                 <!-- KELLY -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Kelly',
-                        'videos/kelly.mov'
-                    )">
+                'videos/kelly.mov',
+                'Kelly',
+                'Love from Kelly'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/kelly.mov" muted preload="metadata">
-                        </video>
+                        <video src="videos/kelly.mov" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -581,25 +438,25 @@
 
                     </div>
 
-                    <h3>Kelly</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Kelly
+                    </h3>
 
                 </div>
 
 
 
-                <!-- JODIE -->
+                <!-- CYDNIE -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Jodie',
-                        'videos/jodie.mp4'
-                    )">
+                'videos/cydnie.mov',
+                'Cydnie',
+                'Love from Cydnie'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/jodie.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/cydnie.mov" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -607,25 +464,25 @@
 
                     </div>
 
-                    <h3>Jodie</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Cydnie
+                    </h3>
 
                 </div>
 
 
 
-                <!-- DAVID -->
+                <!-- KYLA -->
 
                 <div class="video-card" onclick="openVideo(
-                        'David',
-                        'videos/david.mp4'
-                    )">
+                'videos/kyla.mov',
+                'Kyla',
+                'Love from Kyla'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/david.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/kyla.mov" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -633,25 +490,25 @@
 
                     </div>
 
-                    <h3>David</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Kyla
+                    </h3>
 
                 </div>
 
 
 
-                <!-- SHALOM -->
+                <!-- BATANAI -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Shalom',
-                        'videos/shalom.mp4'
-                    )">
+                'videos/batanai.MP4',
+                'Batanai',
+                'Love from Batanai'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/shalom.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/batanai.MP4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -659,11 +516,12 @@
 
                     </div>
 
-                    <h3>Shalom</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Batanai
+                    </h3>
 
                 </div>
+
 
             </div>
 
@@ -671,9 +529,9 @@
 
 
 
-        <!-- =================================================
-             MORE MESSAGES
-        ================================================== -->
+        <!-- =========================================================
+     MORE MESSAGES
+========================================================= -->
 
         <section class="video-section">
 
@@ -689,95 +547,17 @@
             <div class="video-row">
 
 
-                <!-- ABIGAIL -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Abigail',
-                        'videos/abigail.mp4'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/abigail.mp4" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Abigail</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-
-
-                <!-- ALINE -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Aline',
-                        'videos/aline.mov'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/aline.mov" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Aline</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-
-
-                <!-- LAURYN -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Lauryn',
-                        'videos/lauryn.mp4'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/lauryn.mp4" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Lauryn</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-
-
                 <!-- EOIN & MARTHA -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Eoin & Martha',
-                        'videos/eoinmartha.mp4'
-                    )">
+                'videos/eoinmartha.MP4',
+                'Eoin & Martha',
+                'Love from Eoin & Martha'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/eoinmartha.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/eoinmartha.MP4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -785,9 +565,9 @@
 
                     </div>
 
-                    <h3>Eoin & Martha</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Eoin & Martha
+                    </h3>
 
                 </div>
 
@@ -796,14 +576,14 @@
                 <!-- YINKA & CHARLOTTE -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Yinka & Charlotte',
-                        'videos/yinkacharlotte.mp4'
-                    )">
+                'videos/yinkacharlotte.MP4',
+                'Yinka & Charlotte',
+                'Love from Yinka & Charlotte'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/yinkacharlotte.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/yinkacharlotte.MP4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -811,11 +591,142 @@
 
                     </div>
 
-                    <h3>Yinka & Charlotte</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Yinka & Charlotte
+                    </h3>
 
                 </div>
+
+
+
+                <!-- MIA -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/mia.mp4',
+                'Mia',
+                'Love from Mia'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/mia.mp4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Mia
+                    </h3>
+
+                </div>
+
+
+
+                <!-- ALINE -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/aline.mov',
+                'Aline',
+                'Love from Aline'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/aline.mov" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Aline
+                    </h3>
+
+                </div>
+
+
+
+                <!-- LAURYN -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/lauryn.MP4',
+                'Lauryn',
+                'Love from Lauryn'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/lauryn.MP4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Lauryn
+                    </h3>
+
+                </div>
+
+
+
+                <!-- ISAAC -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/isaac.MP4',
+                'Isaac',
+                'Love from Isaac'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/isaac.MP4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Isaac
+                    </h3>
+
+                </div>
+
+
+
+                <!-- JODIE -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/jodie.mp4',
+                'Jodie',
+                'Love from Jodie'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/jodie.mp4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Jodie
+                    </h3>
+
+                </div>
+
 
             </div>
 
@@ -823,9 +734,9 @@
 
 
 
-        <!-- =================================================
-             FINAL EPISODES
-        ================================================== -->
+        <!-- =========================================================
+     THE FINAL EPISODES
+========================================================= -->
 
         <section class="video-section">
 
@@ -841,17 +752,17 @@
             <div class="video-row">
 
 
-                <!-- MICHEAL -->
+                <!-- ABIGAIL -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Micheal',
-                        'videos/micheal.mp4'
-                    )">
+                'videos/abigail.MP4',
+                'Abigail',
+                'Love from Abigail'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/micheal.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/abigail.MP4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -859,25 +770,25 @@
 
                     </div>
 
-                    <h3>Micheal</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Abigail
+                    </h3>
 
                 </div>
 
 
 
-                <!-- BATANAI BTS -->
+                <!-- JENNIFER -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Batanaibts',
-                        'videos/batanaibts.mp4'
-                    )">
+                'videos/jennifer.mov',
+                'Jennifer',
+                'Love from Jennifer'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/batanaibts.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/jennifer.mov" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -885,161 +796,9 @@
 
                     </div>
 
-                    <h3>Batanai BTS</h3>
-
-                    <p>Behind The Scenes</p>
-
-                </div>
-
-
-
-                <!-- BATANAI -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Batanai',
-                        'videos/batanai.mp4'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/batanai.mp4" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Batanai</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-
-
-                <!-- PEACE BTS -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Peace BTS',
-                        'videos/peacebettybts.mp4'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/peacebettybts.mp4" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Peace BTS</h3>
-
-                    <p>Behind The Scenes</p>
-
-                </div>
-
-
-
-                <!-- PEACE BETTY -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Peace Betty',
-                        'videos/peacebetty.mp4'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/peacebetty.mp4" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Peace Betty</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             LAST GOODBYE
-        ================================================== -->
-
-        <section class="video-section">
-
-            <div class="section-title">
-
-                <h2>
-                    The Last Goodbye
-                </h2>
-
-            </div>
-
-
-            <div class="video-row">
-
-
-                <!-- ISAAC -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Isaac',
-                        'videos/isaac.mp4'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/isaac.mp4" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Isaac</h3>
-
-                    <p>Goodbye Message</p>
-
-                </div>
-
-
-
-                <!-- JO -->
-
-                <div class="video-card" onclick="openVideo(
-                        'Jo',
-                        'videos/jo.mp4'
-                    )">
-
-                    <div class="thumbnail">
-
-                        <video src="videos/jo.mp4" muted preload="metadata">
-                        </video>
-
-                        <div class="card-play">
-                            ▶
-                        </div>
-
-                    </div>
-
-                    <h3>Jo</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Jennifer
+                    </h3>
 
                 </div>
 
@@ -1048,14 +807,14 @@
                 <!-- PRECIOUS -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Precious',
-                        'videos/precious.mov'
-                    )">
+                'videos/precious.mov',
+                'Precious',
+                'Love from Precious'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/precious.mov" muted preload="metadata">
-                        </video>
+                        <video src="videos/precious.mov" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1063,25 +822,25 @@
 
                     </div>
 
-                    <h3>Precious</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Precious
+                    </h3>
 
                 </div>
 
 
 
-                <!-- JOY -->
+                <!-- DEMARIO -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Joy',
-                        'videos/joy.mp4'
-                    )">
+                'videos/demario.MP4',
+                'Demario',
+                'Love from Demario'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/joy.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/demario.MP4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1089,25 +848,25 @@
 
                     </div>
 
-                    <h3>Joy</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Demario
+                    </h3>
 
                 </div>
 
 
 
-                <!-- REBECCA -->
+                <!-- IYIADE -->
 
                 <div class="video-card" onclick="openVideo(
-                        'Rebecca',
-                        'videos/rebecca.mp4'
-                    )">
+                'videos/iyiade.mov',
+                'Iyiade',
+                'Love from Iyiade'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="videos/rebecca.mp4" muted preload="metadata">
-                        </video>
+                        <video src="videos/iyiade.mov" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1115,11 +874,12 @@
 
                     </div>
 
-                    <h3>Rebecca</h3>
-
-                    <p>Goodbye Message</p>
+                    <h3>
+                        Iyiade
+                    </h3>
 
                 </div>
+
 
             </div>
 
@@ -1127,25 +887,235 @@
 
 
 
-        <!-- =================================================
-             REMEMBER WHEN
-        ================================================== -->
+        <!-- =========================================================
+     BECAUSE YOU WATCHED THE OTHERS
+========================================================= -->
+
+        <section class="video-section">
+
+            <div class="section-title">
+
+                <h2>
+                    Because You Watched The Others
+                </h2>
+
+            </div>
+
+
+            <div class="video-row">
+
+
+                <!-- DAVID -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/david.MP4',
+                'David',
+                'Love from David'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/david.MP4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        David
+                    </h3>
+
+                </div>
+
+
+
+                <!-- MICHEAL -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/micheal.MP4',
+                'Micheal',
+                'Love from Micheal'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/micheal.MP4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Micheal
+                    </h3>
+
+                </div>
+
+
+
+                <!-- NANA -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/nana.mov',
+                'Nana',
+                'Love from Nana'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/nana.mov" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Nana
+                    </h3>
+
+                </div>
+
+
+
+                <!-- JO -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/jo.mp4',
+                'Jo',
+                'Love from Jo'
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/jo.mp4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Jo
+                    </h3>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+     NOT EVERYONE IS PERFECT
+========================================================= -->
+
+        <section class="video-section">
+
+            <div class="section-title">
+
+                <h2>
+                    Not everyone is perfect
+                </h2>
+
+            </div>
+
+
+            <div class="video-row">
+
+
+                <!-- BATANAI BTS -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/batanaibts.MP4',
+                'Batanai BTS',
+                ''
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/batanaibts.MP4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Batanai BTS
+                    </h3>
+
+                    <p>
+                        Attempt One
+                    </p>
+
+                </div>
+
+
+
+                <!-- PEACE & BETTY BTS -->
+
+                <div class="video-card" onclick="openVideo(
+                'videos/peacebettybts.MP4',
+                'Peace & Betty BTS',
+                ''
+            )">
+
+                    <div class="thumbnail">
+
+                        <video src="videos/peacebettybts.MP4" muted playsinline preload="metadata"></video>
+
+                        <div class="card-play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Peace & Betty BTS
+                    </h3>
+
+                    <p>
+                        Attempt One
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+     REMEMBER WHEN
+========================================================= -->
 
         <section class="video-section memories-section" id="memories">
 
+
             <div class="memory-heading">
 
-                <p class="memory-kicker">
+                <div class="memory-kicker">
                     A COLLECTION OF MEMORIES
-                </p>
+                </div>
 
                 <h2>
                     Remember When...
                 </h2>
 
                 <p class="memory-description">
-                    Because the goodbye isn't the only thing
-                    worth remembering.
+                    Some moments deserve another watch.
                 </p>
 
             </div>
@@ -1154,17 +1124,17 @@
             <div class="video-row">
 
 
-                <!-- FIVE -->
+                <!-- MEMORY 5 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Five',
-                        'mvideos/five.mp4'
-                    )">
+                'mvideos/five.mp4',
+                'Remember When... 1',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/five.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/five.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1172,25 +1142,29 @@
 
                     </div>
 
-                    <h3>Memory Five</h3>
+                    <h3>
+                        Memory One
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you had bts in the toilet
+                    </p>
 
                 </div>
 
 
 
-                <!-- SIX -->
+                <!-- MEMORY 6 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Six',
-                        'mvideos/six.mp4'
-                    )">
+                'mvideos/six.mp4',
+                'Remember When... 2',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/six.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/six.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1198,25 +1172,29 @@
 
                     </div>
 
-                    <h3>Memory Six</h3>
+                    <h3>
+                        Memory Two
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you turned jamaican
+                    </p>
 
                 </div>
 
 
 
-                <!-- SEVEN -->
+                <!-- MEMORY 7 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Seven',
-                        'mvideos/seven.mp4'
-                    )">
+                'mvideos/seven.mp4',
+                'Remember When... 3',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/seven.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/seven.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1224,25 +1202,29 @@
 
                     </div>
 
-                    <h3>Memory Seven</h3>
+                    <h3>
+                        Memory Three
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you showed dem da moves 
+                    </p>
 
                 </div>
 
 
 
-                <!-- EIGHT -->
+                <!-- MEMORY 8 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Eight',
-                        'mvideos/eight.mp4'
-                    )">
+                'mvideos/eight.mp4',
+                'Remember When... 4',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/eight.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/eight.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1250,25 +1232,29 @@
 
                     </div>
 
-                    <h3>Memory Eight</h3>
+                    <h3>
+                        Memory Four
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you showed dem da moves...again
+                    </p>
 
                 </div>
 
 
 
-                <!-- NINE -->
+                <!-- MEMORY 9 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Nine',
-                        'mvideos/nine.mp4'
-                    )">
+                'mvideos/nine.mp4',
+                'Remember When... 5',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/nine.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/nine.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1276,25 +1262,29 @@
 
                     </div>
 
-                    <h3>Memory Nine</h3>
+                    <h3>
+                        Memory Five
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you praised the LORD
+                    </p>
 
                 </div>
 
 
 
-                <!-- TEN -->
+                <!-- MEMORY 10 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Ten',
-                        'mvideos/ten.mp4'
-                    )">
+                'mvideos/ten.mp4',
+                'Remember When... 6',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/ten.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/ten.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1302,25 +1292,29 @@
 
                     </div>
 
-                    <h3>Memory Ten</h3>
+                    <h3>
+                        Memory Six
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you showed dem da moves...againnnn
+                    </p>
 
                 </div>
 
 
 
-                <!-- ELEVEN -->
+                <!-- MEMORY 11 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Eleven',
-                        'mvideos/eleven.mp4'
-                    )">
+                'mvideos/eleven.mp4',
+                'Remember When... 7',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/eleven.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/eleven.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1328,25 +1322,29 @@
 
                     </div>
 
-                    <h3>Memory Eleven</h3>
+                    <h3>
+                        Memory Seven
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you showed them how Monet gon praise the LORD with all her breath
+                    </p>
 
                 </div>
 
 
 
-                <!-- TWELVE -->
+                <!-- MEMORY 12 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Twelve',
-                        'mvideos/twelve.mp4'
-                    )">
+                'mvideos/twelve.mp4',
+                'Remember When... 8',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/twelve.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/twelve.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1354,25 +1352,29 @@
 
                     </div>
 
-                    <h3>Memory Twelve</h3>
+                    <h3>
+                        Memory Eight
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when yall tried that dead food
+                    </p>
 
                 </div>
 
 
 
-                <!-- THIRTEEN -->
+                <!-- MEMORY 13 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Thirteen',
-                        'mvideos/thirteen.mp4'
-                    )">
+                'mvideos/thirteen.mp4',
+                'Remember When... 9',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/thirteen.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/thirteen.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1380,25 +1382,29 @@
 
                     </div>
 
-                    <h3>Memory Thirteen</h3>
+                    <h3>
+                        Memory Nine
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you really had to show dem da moves becasue this how you really jambazzzz
+                    </p>
 
                 </div>
 
 
 
-                <!-- FOURTEEN -->
+                <!-- MEMORY 14 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Fourteen',
-                        'mvideos/fourteen.mp4'
-                    )">
+                'mvideos/fourteen.mp4',
+                'Remember When... 10',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/fourteen.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/fourteen.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1406,25 +1412,29 @@
 
                     </div>
 
-                    <h3>Memory Fourteen</h3>
+                    <h3>
+                        Memory Ten
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you had a great time just vibing
+                    </p>
 
                 </div>
 
 
 
-                <!-- FIFTEEN -->
+                <!-- MEMORY 15 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Fifteen',
-                        'mvideos/fifteen.mp4'
-                    )">
+                'mvideos/fifteen.mp4',
+                'Remember When... 11',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/fifteen.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/fifteen.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1432,25 +1442,29 @@
 
                     </div>
 
-                    <h3>Memory Fifteen</h3>
+                    <h3>
+                        Memory Eleven
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you made tiktoks on the road
+                    </p>
 
                 </div>
 
 
 
-                <!-- SIXTEEN -->
+                <!-- MEMORY 16 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Sixteen',
-                        'mvideos/sixteen.mp4'
-                    )">
+                'mvideos/sixteen.mp4',
+                'Remember When... 12',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/sixteen.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/sixteen.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1458,25 +1472,29 @@
 
                     </div>
 
-                    <h3>Memory Sixteen</h3>
+                    <h3>
+                        Memory Twelve
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you was forced to eat bad food
+                    </p>
 
                 </div>
 
 
 
-                <!-- SEVENTEEN -->
+                <!-- MEMORY 17 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Seventeen',
-                        'mvideos/seventeen.mp4'
-                    )">
+                'mvideos/seventeen.mp4',
+                'Remember When... 13',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/seventeen.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/seventeen.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1484,25 +1502,29 @@
 
                     </div>
 
-                    <h3>Memory Seventeen</h3>
+                    <h3>
+                        Memory Thirteen
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when you reached 98.3% accuracy
+                    </p>
 
                 </div>
 
 
 
-                <!-- EIGHTEEN -->
+                <!-- MEMORY 18 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Eighteen',
-                        'mvideos/eighteen.mp4'
-                    )">
+                'mvideos/eighteen.mp4',
+                'Remember When... 14',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/eighteen.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/eighteen.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1510,25 +1532,29 @@
 
                     </div>
 
-                    <h3>Memory Eighteen</h3>
+                    <h3>
+                        Memory Fourteen
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        Remember when SCUBBAAAAAAAAAA
+                    </p>
 
                 </div>
 
 
 
-                <!-- NINETEEN -->
+                <!-- MEMORY 19 -->
 
                 <div class="video-card memory-card" onclick="openVideo(
-                        'Memory Nineteen',
-                        'mvideos/nineteen.mp4'
-                    )">
+                'mvideos/nineteen.mp4',
+                'Remember When... 15',
+                'May this memory give you a new flashback or smile to the face.'
+            )">
 
                     <div class="thumbnail">
 
-                        <video src="mvideos/nineteen.mp4" muted preload="metadata">
-                        </video>
+                        <video src="mvideos/nineteen.mp4" muted playsinline preload="metadata"></video>
 
                         <div class="card-play">
                             ▶
@@ -1536,54 +1562,57 @@
 
                     </div>
 
-                    <h3>Memory Nineteen</h3>
+                    <h3>
+                        Memory Fifteen
+                    </h3>
 
-                    <p>Remember When...</p>
+                    <p>
+                        THAT IS ALL *SAD FACE*
+                    </p>
 
                 </div>
+
 
             </div>
 
         </section>
 
+
+
     </main>
 
 
 
-    <!-- =====================================================
-         VIDEO POPUP
-    ====================================================== -->
+    <!-- =========================================================
+     VIDEO MODAL
+========================================================= -->
 
     <div class="video-modal" id="videoModal">
 
-        <div class="modal-background" onclick="closeVideo()">
-        </div>
+
+        <div class="modal-background" onclick="closeVideo()"></div>
 
 
         <div class="modal-content">
 
-            <button class="close-button" onclick="closeVideo()">
 
+            <button class="close-button" onclick="closeVideo()" aria-label="Close video">
                 ×
-
             </button>
 
 
-            <video id="mainVideo" controls playsinline>
-            </video>
+            <video id="modalVideo" controls playsinline></video>
 
 
             <div class="modal-details">
 
-                <p class="modal-label">
+                <div class="modal-label">
                     NETFLIX GOODBYE ORIGINAL
-                </p>
+                </div>
 
-
-                <h2 id="videoTitle">
-                    Goodbye Message
+                <h2 id="modalTitle">
+                    Goodbye
                 </h2>
-
 
                 <div class="modal-meta">
 
@@ -1601,11 +1630,7 @@
 
                 </div>
 
-
-                <p>
-                    A special message from one of
-                    Monet's favourite people.
-                </p>
+                <p id="modalDescription"></p>
 
             </div>
 
@@ -1615,9 +1640,9 @@
 
 
 
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
 
     <footer>
 
@@ -1626,7 +1651,7 @@
         </div>
 
         <p>
-            This website is a parody made with ❤️
+            Happy Graduation.
         </p>
 
         <p>
@@ -1637,75 +1662,43 @@
 
 
 
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
+    <!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
 
     <script>
 
 
-        /* =================================================
-           OPEN VIDEO
-        ================================================= */
+        /* =========================================================
+           NAVBAR
+        ========================================================= */
 
-        function openVideo(name, videoPath) {
-
-            const modal =
-                document.getElementById("videoModal");
-
-            const video =
-                document.getElementById("mainVideo");
-
-            const title =
-                document.getElementById("videoTitle");
+        const navbar =
+            document.getElementById("navbar");
 
 
-            title.textContent = name;
+        window.addEventListener(
+            "scroll",
+            function () {
 
-            video.src = videoPath;
+                if (window.scrollY > 30) {
 
-            modal.classList.add("active");
+                    navbar.classList.add("scrolled");
 
-            document.body.classList.add("modal-open");
+                } else {
 
+                    navbar.classList.remove("scrolled");
 
-            video.play().catch(function () { });
+                }
 
-        }
+            }
+        );
 
 
 
-        /* =================================================
-           CLOSE VIDEO
-        ================================================= */
-
-        function closeVideo() {
-
-            const modal =
-                document.getElementById("videoModal");
-
-            const video =
-                document.getElementById("mainVideo");
-
-
-            video.pause();
-
-            video.removeAttribute("src");
-
-            video.load();
-
-
-            modal.classList.remove("active");
-
-            document.body.classList.remove("modal-open");
-
-        }
-
-
-
-        /* =================================================
-           SCROLL FUNCTIONS
-        ================================================= */
+        /* =========================================================
+           NAVIGATION FUNCTIONS
+        ========================================================= */
 
         function scrollToTop() {
 
@@ -1740,15 +1733,187 @@
 
 
 
-        /* =================================================
+        /* =========================================================
+           HERO SLIDESHOW
+        ========================================================= */
+
+        const slides =
+            document.querySelectorAll(".hero-slide");
+
+        const indicators =
+            document.querySelectorAll(".indicator");
+
+        let currentSlide = 0;
+
+
+        function showSlide(index) {
+
+            slides.forEach(
+                function (slide, i) {
+
+                    slide.classList.toggle(
+                        "active",
+                        i === index
+                    );
+
+                }
+            );
+
+
+            indicators.forEach(
+                function (indicator, i) {
+
+                    indicator.classList.toggle(
+                        "active",
+                        i === index
+                    );
+
+                }
+            );
+
+        }
+
+
+        setInterval(
+            function () {
+
+                currentSlide =
+                    (currentSlide + 1)
+                    % slides.length;
+
+                showSlide(currentSlide);
+
+            },
+            5000
+        );
+
+
+
+        /* =========================================================
+           VIDEO MODAL
+        ========================================================= */
+
+        function openVideo(
+            videoSource,
+            title,
+            description
+        ) {
+
+            const modal =
+                document.getElementById(
+                    "videoModal"
+                );
+
+            const modalVideo =
+                document.getElementById(
+                    "modalVideo"
+                );
+
+            const modalTitle =
+                document.getElementById(
+                    "modalTitle"
+                );
+
+            const modalDescription =
+                document.getElementById(
+                    "modalDescription"
+                );
+
+
+            modalTitle.textContent =
+                title;
+
+
+            if (
+                description &&
+                description.trim() !== ""
+            ) {
+
+                modalDescription.textContent =
+                    description;
+
+                modalDescription.style.display =
+                    "block";
+
+            } else {
+
+                modalDescription.textContent =
+                    "";
+
+                modalDescription.style.display =
+                    "none";
+
+            }
+
+
+            modalVideo.src =
+                videoSource;
+
+            modal.classList.add(
+                "active"
+            );
+
+            document.body.classList.add(
+                "modal-open"
+            );
+
+
+            modalVideo.load();
+
+
+            modalVideo.play().catch(
+                function () { }
+            );
+
+        }
+
+
+
+        function closeVideo() {
+
+            const modal =
+                document.getElementById(
+                    "videoModal"
+                );
+
+            const modalVideo =
+                document.getElementById(
+                    "modalVideo"
+                );
+
+
+            modalVideo.pause();
+
+            modalVideo.removeAttribute(
+                "src"
+            );
+
+            modalVideo.load();
+
+
+            modal.classList.remove(
+                "active"
+            );
+
+            document.body.classList.remove(
+                "modal-open"
+            );
+
+        }
+
+
+
+        /* =========================================================
            ESCAPE KEY
-        ================================================= */
+        ========================================================= */
 
         document.addEventListener(
             "keydown",
             function (event) {
 
-                if (event.key === "Escape") {
+                if (
+                    event.key === "Escape"
+                ) {
 
                     closeVideo();
 
@@ -1759,115 +1924,44 @@
 
 
 
-        /* =================================================
-           VIDEO CARD HOVER PREVIEW
-        ================================================= */
+        /* =========================================================
+           VIDEO THUMBNAIL HOVER
+        ========================================================= */
 
-        const cards =
-            document.querySelectorAll(".video-card");
+        document
+            .querySelectorAll(
+                ".video-card video"
+            )
+            .forEach(
+                function (video) {
+
+                    video.addEventListener(
+                        "mouseenter",
+                        function () {
+
+                            video.play().catch(
+                                function () { }
+                            );
+
+                        }
+                    );
 
 
-        cards.forEach(function (card) {
+                    video.addEventListener(
+                        "mouseleave",
+                        function () {
 
-            const video =
-                card.querySelector("video");
+                            video.pause();
 
+                            video.currentTime =
+                                0;
 
-            card.addEventListener(
-                "mouseenter",
-                function () {
-
-                    video.play().catch(
-                        function () { }
+                        }
                     );
 
                 }
             );
 
-
-            card.addEventListener(
-                "mouseleave",
-                function () {
-
-                    video.pause();
-
-                    video.currentTime = 0;
-
-                }
-            );
-
-        });
-
-
-
-        /* =================================================
-           HERO PHOTO TRAILER
-        ================================================= */
-
-        const slides =
-            document.querySelectorAll(".hero-slide");
-
-
-        const indicators =
-            document.querySelectorAll(".indicator");
-
-
-        let currentSlide = 0;
-
-
-        function changeSlide() {
-
-            slides[currentSlide]
-                .classList.remove("active");
-
-            indicators[currentSlide]
-                .classList.remove("active");
-
-
-            currentSlide =
-                (currentSlide + 1) % slides.length;
-
-
-            slides[currentSlide]
-                .classList.add("active");
-
-            indicators[currentSlide]
-                .classList.add("active");
-
-        }
-
-
-        setInterval(
-            changeSlide,
-            5000
-        );
-
-
-
-        /* =================================================
-           NAVBAR SCROLL EFFECT
-        ================================================= */
-
-        window.addEventListener(
-            "scroll",
-            function () {
-
-                const navbar =
-                    document.querySelector(".navbar");
-
-
-                if (window.scrollY > 50) {
-
-                    navbar.classList.add("scrolled");
-
-                } else {
-
-                    navbar.classList.remove("scrolled");
-
-                }
-
-            }
-        );
 
     </script>
 
