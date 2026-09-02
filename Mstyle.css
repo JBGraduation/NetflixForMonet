@@ -1,3 +1,4 @@
+```css
 /* =========================================================
    RESET
 ========================================================= */
@@ -8,12 +9,10 @@
     box-sizing: border-box;
 }
 
-
 html {
     background: #000;
     scroll-behavior: smooth;
 }
-
 
 body {
     background: #000;
@@ -27,12 +26,9 @@ body {
     overflow-x: hidden;
 }
 
-
 body.modal-open {
     overflow: hidden;
 }
-
-
 
 /* =========================================================
    NAVIGATION
@@ -69,14 +65,12 @@ body.modal-open {
 
 }
 
-
 .navbar.scrolled {
 
     background:
         rgba(0, 0, 0, 0.96);
 
 }
-
 
 .netflix-logo {
 
@@ -95,7 +89,6 @@ body.modal-open {
 
 }
 
-
 .nav-links {
 
     display: flex;
@@ -110,7 +103,6 @@ body.modal-open {
 
 }
 
-
 .nav-links span {
 
     cursor: pointer;
@@ -120,13 +112,11 @@ body.modal-open {
 
 }
 
-
 .nav-links span:hover {
 
     color: #fff;
 
 }
-
 
 .nav-links .active {
 
@@ -136,6 +126,7 @@ body.modal-open {
 
 }
 
+/* GREEN PROFILE ICON */
 
 .nav-profile {
 
@@ -157,9 +148,9 @@ body.modal-open {
 
     font-size: 17px;
 
+    color: #20c56b;
+
 }
-
-
 
 /* =========================================================
    HERO
@@ -183,8 +174,6 @@ body.modal-open {
 
 }
 
-
-
 /* =========================================================
    PHOTO SLIDESHOW
 ========================================================= */
@@ -198,7 +187,6 @@ body.modal-open {
     overflow: hidden;
 
 }
-
 
 .hero-slide {
 
@@ -222,7 +210,6 @@ body.modal-open {
 
 }
 
-
 .hero-slide.active {
 
     opacity: 1;
@@ -230,8 +217,6 @@ body.modal-open {
     transform: scale(1);
 
 }
-
-
 
 /* =========================================================
    HERO GRADIENT
@@ -261,8 +246,6 @@ body.modal-open {
 
 }
 
-
-
 /* =========================================================
    HERO CONTENT
 ========================================================= */
@@ -279,7 +262,6 @@ body.modal-open {
 
 }
 
-
 .hero-kicker {
 
     color: #ddd;
@@ -293,7 +275,6 @@ body.modal-open {
     margin-bottom: 15px;
 
 }
-
 
 .hero h1 {
 
@@ -320,7 +301,6 @@ body.modal-open {
 
 }
 
-
 .hero-details {
 
     display: flex;
@@ -337,13 +317,11 @@ body.modal-open {
 
 }
 
-
 .hero-details span {
 
     white-space: nowrap;
 
 }
-
 
 .hero-details .hd {
 
@@ -356,7 +334,6 @@ body.modal-open {
     font-size: 11px;
 
 }
-
 
 .hero-description {
 
@@ -372,7 +349,6 @@ body.modal-open {
 
 }
 
-
 .hero-buttons {
 
     display: flex;
@@ -382,7 +358,6 @@ body.modal-open {
     margin-top: 28px;
 
 }
-
 
 .play-button,
 .more-button {
@@ -411,7 +386,6 @@ body.modal-open {
 
 }
 
-
 .play-button {
 
     background: #fff;
@@ -420,7 +394,6 @@ body.modal-open {
 
 }
 
-
 .play-button:hover {
 
     background: #ddd;
@@ -428,7 +401,6 @@ body.modal-open {
     transform: scale(1.04);
 
 }
-
 
 .more-button {
 
@@ -439,7 +411,6 @@ body.modal-open {
 
 }
 
-
 .more-button:hover {
 
     background:
@@ -448,8 +419,6 @@ body.modal-open {
     transform: scale(1.04);
 
 }
-
-
 
 /* =========================================================
    SLIDESHOW INDICATORS
@@ -471,7 +440,6 @@ body.modal-open {
 
 }
 
-
 .indicator {
 
     width: 28px;
@@ -487,7 +455,6 @@ body.modal-open {
 
 }
 
-
 .indicator.active {
 
     background: #fff;
@@ -495,8 +462,6 @@ body.modal-open {
     width: 45px;
 
 }
-
-
 
 /* =========================================================
    MAIN
@@ -512,8 +477,6 @@ main {
 
 }
 
-
-
 /* =========================================================
    VIDEO SECTIONS
 ========================================================= */
@@ -525,7 +488,6 @@ main {
     margin-bottom: 10px;
 
 }
-
 
 .section-title {
 
@@ -539,7 +501,6 @@ main {
 
 }
 
-
 .section-title h2 {
 
     font-size: 21px;
@@ -547,7 +508,6 @@ main {
     font-weight: 700;
 
 }
-
 
 .see-all {
 
@@ -563,14 +523,11 @@ main {
 
 }
 
-
 .see-all:hover {
 
     color: #fff;
 
 }
-
-
 
 /* =========================================================
    VIDEO ROW
@@ -592,14 +549,11 @@ main {
 
 }
 
-
 .video-row::-webkit-scrollbar {
 
     display: none;
 
 }
-
-
 
 /* =========================================================
    VIDEO CARD
@@ -621,7 +575,6 @@ main {
 
 }
 
-
 .video-card:hover {
 
     transform: scale(1.15);
@@ -629,8 +582,6 @@ main {
     z-index: 50;
 
 }
-
-
 
 /* =========================================================
    THUMBNAIL
@@ -655,7 +606,6 @@ main {
 
 }
 
-
 .thumbnail video {
 
     width: 100%;
@@ -669,8 +619,6 @@ main {
     background: #111;
 
 }
-
-
 
 /* =========================================================
    PLAY ICON
@@ -713,14 +661,11 @@ main {
 
 }
 
-
 .video-card:hover .card-play {
 
     opacity: 1;
 
 }
-
-
 
 /* =========================================================
    PROGRESS BAR
@@ -742,7 +687,6 @@ main {
 
 }
 
-
 .progress div {
 
     width: 35%;
@@ -752,8 +696,6 @@ main {
     background: #E50914;
 
 }
-
-
 
 /* =========================================================
    CARD TEXT
@@ -775,6 +717,11 @@ main {
 
 }
 
+/*
+   The original subtitle styling is kept here in case
+   any BTS card uses a <p>. Normal cards simply won't
+   have a <p> anymore.
+*/
 
 .video-card p {
 
@@ -785,8 +732,6 @@ main {
     color: #777;
 
 }
-
-
 
 /* =========================================================
    REMEMBER SECTION
@@ -808,13 +753,11 @@ main {
 
 }
 
-
 .memory-heading {
 
     margin-bottom: 10px;
 
 }
-
 
 .memory-kicker {
 
@@ -830,7 +773,6 @@ main {
 
 }
 
-
 .memory-heading h2 {
 
     font-size: 28px;
@@ -838,7 +780,6 @@ main {
     font-weight: 700;
 
 }
-
 
 .memory-description {
 
@@ -850,21 +791,17 @@ main {
 
 }
 
-
 .memory-card {
 
     flex-basis: 230px;
 
 }
 
-
 .memory-card .thumbnail {
 
     height: 130px;
 
 }
-
-
 
 /* =========================================================
    VIDEO MODAL
@@ -888,13 +825,11 @@ main {
 
 }
 
-
 .video-modal.active {
 
     display: flex;
 
 }
-
 
 .modal-background {
 
@@ -909,7 +844,6 @@ main {
         blur(8px);
 
 }
-
 
 .modal-content {
 
@@ -934,8 +868,7 @@ main {
 
 }
 
-
-.modal-content>video {
+.modal-content > video {
 
     width: 100%;
 
@@ -946,7 +879,6 @@ main {
     background: #000;
 
 }
-
 
 .close-button {
 
@@ -979,20 +911,17 @@ main {
 
 }
 
-
 .close-button:hover {
 
     background: #E50914;
 
 }
 
-
 .modal-details {
 
     padding: 20px 25px 28px;
 
 }
-
 
 .modal-label {
 
@@ -1008,7 +937,6 @@ main {
 
 }
 
-
 .modal-details h2 {
 
     font-size: 28px;
@@ -1016,7 +944,6 @@ main {
     margin-bottom: 10px;
 
 }
-
 
 .modal-meta {
 
@@ -1032,16 +959,13 @@ main {
 
 }
 
-
-.modal-details>p:last-child {
+.modal-details > p:last-child {
 
     color: #aaa;
 
     line-height: 1.5;
 
 }
-
-
 
 /* =========================================================
    FOOTER
@@ -1062,7 +986,6 @@ footer {
 
 }
 
-
 .footer-logo {
 
     color: #E50914;
@@ -1075,7 +998,6 @@ footer {
 
 }
 
-
 footer p {
 
     font-size: 12px;
@@ -1083,8 +1005,6 @@ footer p {
     margin-top: 8px;
 
 }
-
-
 
 /* =========================================================
    TABLET
@@ -1098,13 +1018,11 @@ footer p {
 
     }
 
-
     .video-card {
 
         flex: 0 0 210px;
 
     }
-
 
     .thumbnail {
 
@@ -1113,8 +1031,6 @@ footer p {
     }
 
 }
-
-
 
 /* =========================================================
    MOBILE
@@ -1130,20 +1046,17 @@ footer p {
 
     }
 
-
     .netflix-logo {
 
         font-size: 23px;
 
     }
 
-
     .nav-links {
 
         display: none;
 
     }
-
 
     .hero {
 
@@ -1155,20 +1068,17 @@ footer p {
 
     }
 
-
     .hero-content {
 
         margin-top: 60px;
 
     }
 
-
     .hero-slide {
 
         background-position: center;
 
     }
-
 
     .hero h1 {
 
@@ -1178,7 +1088,6 @@ footer p {
 
     }
 
-
     .hero-kicker {
 
         font-size: 11px;
@@ -1186,7 +1095,6 @@ footer p {
         letter-spacing: 3px;
 
     }
-
 
     .hero-details {
 
@@ -1196,7 +1104,6 @@ footer p {
 
     }
 
-
     .hero-description {
 
         font-size: 14px;
@@ -1205,13 +1112,11 @@ footer p {
 
     }
 
-
     .hero-buttons {
 
         flex-direction: row;
 
     }
-
 
     .play-button,
     .more-button {
@@ -1222,7 +1127,6 @@ footer p {
 
     }
 
-
     .slide-indicators {
 
         right: 6%;
@@ -1231,13 +1135,11 @@ footer p {
 
     }
 
-
     main {
 
         margin-top: -20px;
 
     }
-
 
     .video-section {
 
@@ -1245,13 +1147,11 @@ footer p {
 
     }
 
-
     .section-title h2 {
 
         font-size: 17px;
 
     }
-
 
     .video-card {
 
@@ -1259,13 +1159,11 @@ footer p {
 
     }
 
-
     .thumbnail {
 
         height: 102px;
 
     }
-
 
     .video-card:hover {
 
@@ -1273,13 +1171,11 @@ footer p {
 
     }
 
-
     .memory-heading h2 {
 
         font-size: 23px;
 
     }
-
 
     .memory-card {
 
@@ -1287,20 +1183,17 @@ footer p {
 
     }
 
-
     .memory-card .thumbnail {
 
         height: 102px;
 
     }
 
-
     .video-modal {
 
         padding: 10px;
 
     }
-
 
     .modal-content {
 
@@ -1310,13 +1203,11 @@ footer p {
 
     }
 
-
-    .modal-content>video {
+    .modal-content > video {
 
         max-height: 55vh;
 
     }
-
 
     .modal-details {
 
@@ -1324,13 +1215,11 @@ footer p {
 
     }
 
-
     .modal-details h2 {
 
         font-size: 22px;
 
     }
-
 
     .close-button {
 
@@ -1344,8 +1233,6 @@ footer p {
 
 }
 
-
-
 /* =========================================================
    VERY SMALL PHONES
 ========================================================= */
@@ -1358,13 +1245,11 @@ footer p {
 
     }
 
-
     .hero-buttons {
 
         gap: 7px;
 
     }
-
 
     .play-button,
     .more-button {
@@ -1375,13 +1260,11 @@ footer p {
 
     }
 
-
     .video-card {
 
         flex: 0 0 165px;
 
     }
-
 
     .thumbnail {
 
@@ -1390,3 +1273,4 @@ footer p {
     }
 
 }
+```
